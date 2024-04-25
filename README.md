@@ -11,7 +11,9 @@ The goal of this project is to analyze the open-sourced Wikipedia page and see i
 
 The project has some issues in data collection and analysis. First, because the data source is Wikipedia and there is no standard unit to input data, many entries have unconventional descriptions that cannot be analyzed, so many entries will be removed during the transformation phase (about 50). Second, these data entries come from public articles that people know about, but hundreds more data breaches occur privately outside the public eye. Because of this, the impact of data breaches may be much higher and occur much more frequently than suggested by the table in Wikipedia. In the dataset, a reference link describing where these entries originated from is included within the table, derived from the same Wikipedia page. The Wikipedia page includes 390 data entries total, each with 5 attributes for analysis (the company name, the year of the incident, the number of user records affected, the type of organization, and why the company was compromised). Later, I will analyze these attributes to gain deeper insight.
 
+
 Data dictionary:
+
 raw_yield_data.csv
 - index (integer) - A column used to index data by the pandas library in Python.
 - company (string) - The name of an organization/entity that experienced a data breach.
